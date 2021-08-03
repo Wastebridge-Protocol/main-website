@@ -1,0 +1,64 @@
+div.roadmap {
+  padding: 20px;
+  background-color: #212429;
+  // border-top: 1px solid #ffffff;
+  margin-top: 40px;
+
+  p.title {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-block: 30px 10px;
+  }
+
+  p.desc {
+    color: #869ba5;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  div.flexContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    div.month {
+      padding: 20px;
+      
+      p.header {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      
+      ul.description {
+        // list-style: none;
+        
+        li {
+          font-size: 14px;
+          color: #869ba5;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.roadmap {
+    
+    div.flexContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  div.roadmap {
+    
+    div.flexContainer {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+div.home {
+
+  div.tab {
+    background-color: #268ffc;
+    border-block: 1px solid #ffffff;
+    padding-block: 50px;
+
+    p.welcome {
+      text-align: center;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    
+    p.motto {
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+
+  div.cardButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+  }
+
+  div.card {
+    background-color: #212429;
+    border: 1px solid #ffffff;
+    box-shadow: 5px 5px 0px -1px #268ffc;
+    margin: 10px;
+    padding: 20px;
+    user-select: none;
+    cursor: pointer;
+
+    p.title {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    p.description {
+      color: #dedede;
+      font-size: 15px;
+      margin-top: 15px;
+    }
+
+    p.soon {
+      color: #cccccc;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.home {
+    
+    div.cardButtons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  div.home {
+    
+    div.cardButtons {
+      display: block;
+    }
+  }
+}
