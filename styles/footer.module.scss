@@ -98,6 +98,17 @@ div.footer {
 
     div.tab {
 
+      div.brand {
+        
+        p.desc {
+          text-align: center;
+        }
+      }
+
+      ul.media {
+        margin-bottom: 40px;
+      }
+
       &.links {
         justify-content: space-around;
         margin-block: 20px;

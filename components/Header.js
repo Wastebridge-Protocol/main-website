@@ -22,6 +22,7 @@ const Header = () => {
       </ul>
 
       {burgerMenu && <ul className={styles.mobileMenu}>
+        <li onClick={() => setBurgerMenu(false)}><i className='far fa-times'></i></li>
         <li>Learn</li>
         <li>About</li>
         <li><a href='https://swap.wastebridge.org'>Launch dApp</a></li>

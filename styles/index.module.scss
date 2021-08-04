@@ -76,6 +76,17 @@ div.home {
 @media screen and (max-width: 680px) {
   div.home {
     
+    div.tab {
+
+      p.welcome {
+        font-size: 27px;
+      }
+
+      p.motto {
+        font-size: 14px;
+      }
+    }
+
     div.cardButtons {
       display: block;
     }
