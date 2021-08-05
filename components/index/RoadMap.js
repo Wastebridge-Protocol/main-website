@@ -2,7 +2,7 @@ import styles from '../../styles/roadmap.module.scss'
 
 const RoadMap = () => {
   return (
-    <div className={styles.roadmap}>
+    <div className={styles.roadmap} id='roadmap'>
       <p className={styles.title}>Agenda for the upcoming months.</p>
       <p className={styles.desc}>Our plans for the future of WasteBridge and its products</p>
 

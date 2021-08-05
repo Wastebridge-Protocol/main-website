@@ -39,7 +39,7 @@ div.radial-background {
   mix-blend-mode: color;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    #268dfc4c 0,
+    #00bfa64c 0,
     rgba(255, 255, 255, 0) 100%
   );
   transform: translate(-50vw, -100vh);

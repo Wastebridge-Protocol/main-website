@@ -7,11 +7,14 @@ export default function Home() {
   return (
    <div className={styles.home}>
      <div className={styles.tab}>
-        <p className={styles.welcome}>Welcome to WasteBridge</p>
-        <p className={styles.motto}>We empower waste producing and waste management companies like never before.</p>
+        <div className={styles.left}>
+          <p className={styles.welcome}>Welcome to WasteBridge</p>
+          <p className={styles.motto}>We empower waste producing and waste management companies like never before.</p>
+        </div>
+        <img src='/assets/illustrations/welcome.svg' />
      </div>
 
-     <div className={styles.cardButtons}>
+     <div className={styles.cardButtons} id='project'>
        <Card 
         title='DEX Aggregator'
         description='A Decentralised Exchange Aggregator built on top of the 1inch API.'

@@ -1,11 +1,26 @@
 import styles from '../styles/header.module.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState()
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.header}>
+    <div className={styles.header} style={{backgroundColor: scrollPosition > 10 ? '#212429cc' : 'transparent'}}>
       <div className={styles.left}>
         <p className={styles.logo}>WasteBridge</p>
         <p className={styles.desc}>Protocol</p>
@@ -16,7 +31,8 @@ const Header = () => {
       </div>
 
       <ul className={styles.desktopMenu}>
-        <li>Learn</li>
+        <li><a href='#roadmap'>Road Map</a></li>
+        <li><a href='#project'>Project</a></li>
         <li>About</li>
         <li><a href='https://swap.wastebridge.org'>Launch dApp</a></li>
       </ul>

@@ -1,23 +1,31 @@
 div.home {
 
   div.tab {
-    background-color: #268ffc;
-    border-block: 1px solid #ffffff;
-    padding-block: 50px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 50px;
 
-    p.welcome {
-      text-align: center;
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: 600;
+    div.left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      p.welcome {
+        color: #ffffff;
+        font-size: 34px;
+        font-weight: 600;
+      }
+      
+      p.motto {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+      }
     }
-    
-    p.motto {
-      text-align: center;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 400;
-      margin-top: 10px;
+
+    img {
+      width: 100%;
     }
   }
 
@@ -30,7 +38,7 @@ div.home {
   div.card {
     background-color: #212429;
     border: 1px solid #ffffff;
-    box-shadow: 5px 5px 0px -1px #268ffc;
+    box-shadow: 5px 5px 0px -1px #00bfa6;
     margin: 10px;
     padding: 20px;
     user-select: none;
@@ -77,13 +85,24 @@ div.home {
   div.home {
     
     div.tab {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      padding: 14px;
+      margin-top: 20px;
 
-      p.welcome {
-        font-size: 27px;
+      div.left {
+
+        p.welcome {
+          font-size: 27px;
+        }
+        
+        p.motto {
+          font-size: 14px;
+        }
       }
 
-      p.motto {
-        font-size: 14px;
+      img {
+
       }
     }
 

@@ -21,7 +21,7 @@ const Footer = () => {
         <ul className={styles.links}>
           <li>Project</li>
           <li><a href='/assets/lightpaper.pdf'>Lightpaper</a></li>
-          <li>Road Map</li>
+          <li><a href='#roadmap'>Road Map</a></li>
         </ul>
       </div>
 

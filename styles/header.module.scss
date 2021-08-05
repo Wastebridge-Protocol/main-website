@@ -2,19 +2,21 @@ div.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 50px;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
 
   div.left {
 
     p.logo {
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
       color: #ffffff;
     }
 
     p.desc {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 15px;
       color: #ffffff;
       text-align: right;
     }
@@ -50,15 +52,15 @@ div.header {
 
       &:last-of-type {
         color: #ffffff;
-        background-color: #268ffc;
+        background-color: #00bfa6;
         padding: 10px 16px;
-        border: 1px solid #268ffc;
+        border: 1px solid #00bfa6;
         border-radius: 4px;
-        box-shadow: 1px 3px 10px #28517b;
+        box-shadow: 1px 3px 10px #09544b;
 
         &:hover {
           opacity: 0.8;
-          box-shadow: 5px 5px 0px -1px #268ffc;
+          box-shadow: 5px 5px 0px -1px #00bfa6;
           border: 1px solid #ffffff;
           background-color: #1c1f25;
         }
@@ -136,17 +138,17 @@ div.header {
   
         &:last-of-type {
           color: #ffffff;
-          background-color: #268ffc;
+          background-color: #00bfa6;
           padding: 10px 16px;
-          border: 1px solid #268ffc;
+          border: 1px solid #00bfa6;
           border-radius: 4px;
-          box-shadow: 1px 3px 10px #28517b;
+          box-shadow: 1px 3px 10px #09544b;
           width: fit-content;
           margin-inline: auto;
 
           &:hover {
             opacity: 0.8;
-            box-shadow: 5px 5px 0px -1px #268ffc;
+            box-shadow: 5px 5px 0px -1px #00bfa6;
             border: 1px solid #ffffff;
             background-color: #1c1f25;
           }
