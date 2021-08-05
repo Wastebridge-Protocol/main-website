@@ -1,4 +1,5 @@
 import styles from '../../styles/github.module.scss'
+import { motion } from "framer-motion";
 
 const GitHub = () => {
   return (
@@ -10,7 +11,7 @@ const GitHub = () => {
         <p className={styles.button} onClick={() => window.open('https://github.com/Wastebridge-Protocol')}><i className='fab fa-github'></i> Github</p>
       </div>
 
-      <img src='/assets/illustrations/coding.svg' />
+      <motion.img src='/assets/illustrations/coding.svg' layout='fill' />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import Card from '../components/index/Card'
 import RoadMap from '../components/index/RoadMap'
 import GitHub from '../components/index/GitHub'
 import styles from '../styles/index.module.scss'
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
           <p className={styles.welcome}>Welcome to WasteBridge</p>
           <p className={styles.motto}>We empower waste producing and waste management companies like never before.</p>
         </div>
-        <img src='/assets/illustrations/welcome.svg' />
+  
+        <motion.img src='/assets/illustrations/welcome.svg' />
      </div>
 
      <div className={styles.cardButtons} id='project'>
