@@ -1,47 +1,46 @@
 @font-face {
-  font-family: "Cera Pro";
+  font-family: 'Cera Pro';
   font-weight: 400;
-  src: url(/fonts/CeraProRegular.otf);
+  src: url(/assets/fonts/CeraProRegular.otf);
 }
 
 @font-face {
-  font-family: "Cera Pro";
+  font-family: 'Cera Pro';
   font-weight: 500;
-  src: url(/fonts/CeraProMedium.otf);
+  src: url(/assets/fonts/CeraProMedium.otf);
 }
 
 @font-face {
-  font-family: "Cera Pro";
+  font-family: 'Cera Pro';
   font-weight: 600;
-  src: url(/fonts/CeraProBold.otf);
+  src: url(/assets/fonts/CeraProBold.otf);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Cera Pro";
+  font-family: 'Cera Pro' !important;
   scroll-behavior: smooth;
 }
 
-html {
-  background-color: rgb(33, 36, 41) !important;
+/* Description style adjustments */
+section.wrapper ul {
+  list-style: none;
+  text-align: left;
 }
 
-div.radial-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  width: 200vw;
-  height: 200vh;
-  mix-blend-mode: color;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #00bfa64c 0,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: translate(-50vw, -100vh);
-  z-index: -1;
+section.wrapper ul li {
+  font-weight: 400;
+  color: #dddddd;
+  margin-block: 10px;
+}
+
+section.wrapper ul li span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+section#four ul {
+  list-style: circle;
 }

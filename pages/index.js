@@ -1,58 +1,42 @@
-import Card from '../components/index/Card'
-import RoadMap from '../components/index/RoadMap'
-import GitHub from '../components/index/GitHub'
-import styles from '../styles/index.module.scss'
-import { motion } from "framer-motion";
+import Head from 'next/head'
+import Banner from '../components/Home/Banner'
+import Footer from '../components/Home/Footer'
+import Wrapper from '../components/Home/Wrapper'
 
 export default function Home() {
   return (
-   <div className={styles.home}>
-     <div className={styles.tab}>
-        <div className={styles.left}>
-          <p className={styles.welcome}>Welcome to WasteBridge</p>
-          <p className={styles.motto}>We empower waste producing and waste management companies like never before.</p>
-        </div>
-  
-        <motion.img src='/assets/illustrations/welcome.svg' />
-     </div>
+    <div id='page-wrapper'>
+     	<Head>
+	    	<title>WasteBridge Protocol</title>
+		    <meta charSet='utf-8' />
+		    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+		    <link rel='stylesheet' href='/assets/css/main.css' />
+		    <noscript><link rel='stylesheet' href='/assets/css/noscript.css' /></noscript>
+	    </Head> 
 
-     <div className={styles.cardButtons} id='project'>
-       <Card 
-        title='DEX Aggregator'
-        description='A Decentralised Exchange Aggregator built on top of the 1inch API.'
-        image=''
-        link='https://swap.wastebridge.org'
-        soon={false}
-        styles={styles} />
+      <header id='header' className='alt'>
+				<h1><a href='/'>WasteBridge Protocol</a></h1>
+				<nav>
+					<a href='#menu'>Menu</a>
+				</nav>
+			</header>
 
-      <Card 
-        title='Buy $WASTE'
-        description='Buy $WASTE tokens on Pancake Swap.'
-        image=''
-        link=''
-        soon={true}
-        styles={styles} />
+      <nav id='menu'>
+				<div className='inner'>
+					<h2>Menu</h2>
+					<ul className='links'>
+						<li><a href='/'>Home</a></li>
+						<li><a href='#projects'>Projects</a></li>
+						<li><a href='#roadmap'>RoadMap</a></li>
+						<li><a href='https://swap.wastebridge.org'>Launch dApp</a></li>
+					</ul>
+					<a href='' className='close'>Close</a>
+				</div>
+			</nav>
 
-      <Card 
-        title='WB Wallet'
-        description='Top quality DeFi wallet. Simple to use PWA.'
-        image=''
-        soon={true}
-        link=''
-        styles={styles} />
-
-      <Card 
-        title='Learn More'
-        description='Learn more about WasteBridge and its future.'
-        image=''
-        link=''
-        soon={false}
-        styles={styles} />
-     </div>
-
-     <RoadMap />
-
-     <GitHub />
-  </div>
+      <Banner />
+      <Wrapper />
+      <Footer />
+    </div>
   )
 }
