@@ -7,6 +7,7 @@ const Footer = () => {
 				<ul className='contact'>
 					<li className='icon solid fa-envelope'><a href='#'>info@wastebridge.org</a></li>
 					<li className='icon brands fa-twitter'><a href='https://twitter.com/wastebridge'>twitter.com/wastebridge</a></li>
+					<li className='icon brands fa-telegram'><a href='https://t.me/joinchat/yxQIw0366xUyODBk'>t.me</a></li>
 					{/* <li className='icon brands fa-facebook-f'><a href='#'>facebook.com/untitled-tld</a></li> */}
 					{/* <li className='icon brands fa-instagram'><a href='#'>instagram.com/untitled-tld</a></li> */}
 				</ul>
