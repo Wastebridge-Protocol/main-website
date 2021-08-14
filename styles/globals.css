@@ -26,7 +26,7 @@
 
 /* Description style adjustments */
 /* Banner */
-section#banner p.telegram {
+section#banner div.buttons p {
   display: inline-block;
   font-size: 12px;
   box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
@@ -35,10 +35,25 @@ section#banner p.telegram {
   user-select: none;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  margin-right: 10px;
 }
 
-section#banner p.telegram:hover {
+section#banner div.buttons p:hover {
   background-color: rgba(255, 255, 255, 0.025);
+}
+
+section#banner div.inner div.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+section#banner div.inner div.logo img {
+  width: 60%;
 }
 
 /* Wrapper */
