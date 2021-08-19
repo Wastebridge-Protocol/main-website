@@ -8,11 +8,11 @@ div.home {
     background-size: cover;
   }
 
-  div.wavesTab { background-image: url('/breakers/waves1.svg'); }
+  div.wavesTab { background-image: url(../public/breakers/waves1.svg); }
 
-  div.wavesPlan { background-image: url('/breakers/waves3.svg'); }
+  div.wavesPlan { background-image: url(../public/breakers/waves3.svg); }
 
-  div.wavesSwap { background-image: url('/breakers/waves4.svg'); }
+  div.wavesSwap { background-image: url(../public/breakers/waves4.svg); }
 
   div.main {
     display: flex;
