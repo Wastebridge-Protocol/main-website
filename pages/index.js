@@ -30,7 +30,10 @@ export default function Home() {
             White Paper
           </div>
         </div>
+
+        <div className={`${styles.waves} ${styles.wavesTab}`}></div>
       </div>
+
 
       <div className={styles.project} id='plan'>
         <p className={styles.header}><i className='fad fa-project-diagram'></i> Project</p>
@@ -83,6 +86,8 @@ export default function Home() {
             <li><span>$WASTE:</span> All transactions will take place using $WASTE tokens. This way we can ensure that sufficient liquidity will exist and demand will be constantly high.</li>
           </ul>
         </div>
+
+        <div className={`${styles.waves} ${styles.wavesPlan}`}></div>
       </div>
 
       <div className={styles.plan} id='roadmap'>
@@ -124,6 +129,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        <div className={`${styles.waves} ${styles.wavesSwap}`}></div>
       </div>
 
       <div className={styles.swapShowcase}>

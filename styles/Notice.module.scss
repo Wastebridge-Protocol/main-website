@@ -1,10 +1,18 @@
 div.notice {
-  padding-block: 20px;
+  padding-top: 20px;
   text-align: center;
   background-color: #268ffc;
   color: #ffffff;
-  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   z-index: 1;
+
+  div.waves {
+    aspect-ratio: 500/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/breakers/waves2.svg');
+  }
 
   p.top {
     font-weight: 500;

@@ -1,11 +1,25 @@
 div.home {
 
+  div.waves {
+    aspect-ratio: 500/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  div.wavesTab { background-image: url('/breakers/waves1.svg'); }
+
+  div.wavesPlan { background-image: url('/breakers/waves3.svg'); }
+
+  div.wavesSwap { background-image: url('/breakers/waves4.svg'); }
+
   div.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    padding-top: 20px;
     background-color: #f6f7f9;
     color: #212121;
 
@@ -58,7 +72,6 @@ div.home {
   }
 
   div.project {
-    padding: 20px 50px;
     color: #212121;
 
     p.header {
@@ -66,7 +79,7 @@ div.home {
       align-items: center;
       font-size: 20px;
       font-weight: 500;
-      margin-bottom: 8px;
+      margin-left: 20px;
 
       i {
         font-size: 14px;
@@ -77,7 +90,7 @@ div.home {
     div.card {
       display: grid;
       grid-template-columns: 30% 70%;
-      margin-block: 40px;
+      margin: 40px 40px 0 40px;
       background-color: #f6f7f9;
       box-shadow: rgb(210 210 210 / 40%) 0px -1px 0px 0px inset;
       // margin: 10px 10px 0 0;
@@ -121,15 +134,17 @@ div.home {
   }
 
   div.plan {
-    padding: 20px 50px;
     color: #212121;
+    background-color: #268ffc;
 
     p.header {
       display: flex;
       align-items: center;
       font-size: 20px;
       font-weight: 500;
-      margin-bottom: 8px;
+      color: #ffffff;
+      margin-left: 20px;
+      margin-bottom: 10px;
 
       i {
         font-size: 16px;
@@ -144,7 +159,7 @@ div.home {
       div.card {
         background-color: #f6f7f9;
         box-shadow: rgb(210 210 210 / 40%) 0px -1px 0px 0px inset;
-        margin: 10px 10px 0 0;
+        margin: 10px;
         padding: 12px 20px;
         border-radius: 8px;
 
@@ -172,13 +187,15 @@ div.home {
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 20px;
-    margin-top: 50px;
+    background-color: #000000;
+    padding-bottom: 100px;
 
     div.img {
       background-color: #171b1f;
       padding: 15px 10px;
       border-radius: 24px;
-      box-shadow: 0 2px 12px -8px rgb(25 19 38 / 10%), 0 1px 1px rgb(25 19 38 / 5%);
+      // box-shadow: 0 2px 12px -8px rgb(25 19 38 / 10%), 0 1px 1px rgb(25 19 38 / 5%);
+      box-shadow: #4b608a 4px 4px 0px 0px;
 
       img {
         width: 100%;
@@ -186,17 +203,18 @@ div.home {
     }
 
     div.right {
-      color: #212121;
       text-align: right;
       padding: 20px 40px 0 0;
       margin-top: 30px;
 
       p.header {
+        color: #ffffff;
         font-size: 26px;
         font-weight: 600;
       }
 
       p.description {
+        color: #c2c3c3;
         font-size: 15px;
       }
 
@@ -209,6 +227,10 @@ div.home {
         p {
           font-weight: 500;
           font-size: 15px;
+          color: #77b9ff;
+        }
+
+        i {
           color: #77b9ff;
         }
         
@@ -278,7 +300,6 @@ div.home {
   div.home {
 
     div.project {
-      padding: 20px 20px;
 
       div.card {
         display: block;
@@ -294,15 +315,11 @@ div.home {
       }
     }
 
-    div.plan {
-      padding: 20px;
-    }
-
     div.swapShowcase {
       grid-template-columns: 40% 60%;
 
       div.right {
-        padding: 0 5px;
+        padding-inline: 10px 5px;
       }
     }
   }
@@ -385,7 +402,6 @@ div.home {
   div.home {
 
     div.main {
-      height: 50vh;
 
       p.logo {
         font-size: 26px;
@@ -398,19 +414,21 @@ div.home {
     }
 
     div.project {
-      padding-inline: 10px;
 
-      p.header {
-        padding-inline: 10px;
+      div.card {
+        margin: 10px;
       }
     }  
 
     div.plan {
-      padding-inline: 10px;
     
       p.header {
-        padding-inline: 10px;
+        padding-top: 20px;
       }
+    }
+
+    div.swapShowcase {
+      padding-bottom: 50px;
     }
   }
 }
