@@ -24,6 +24,11 @@ export default function Home() {
             <i className='fab fa-telegram-plane'></i>
             Join Chat
           </div>
+
+          <div className={styles.button} onClick={() => loadPage('/whitepaper.pdf')}>
+            <i className='fad fa-scroll-old'></i>
+            White Paper
+          </div>
         </div>
       </div>
 
