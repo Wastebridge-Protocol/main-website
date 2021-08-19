@@ -131,6 +131,7 @@ export default function Home() {
         </div>
 
         <div className={`${styles.waves} ${styles.wavesSwap}`}></div>
+        {/* <img className={styles.breaker} src='/breakers/waves4.svg' alt='' /> */}
       </div>
 
       <div className={styles.swapShowcase}>
