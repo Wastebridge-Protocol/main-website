@@ -1,78 +1,30 @@
 @font-face {
   font-family: 'Cera Pro';
   font-weight: 400;
-  src: url(/assets/fonts/CeraProRegular.otf);
+  src: url(/fonts/CeraProRegular.otf);
 }
 
 @font-face {
   font-family: 'Cera Pro';
   font-weight: 500;
-  src: url(/assets/fonts/CeraProMedium.otf);
+  src: url(/fonts/CeraProMedium.otf);
 }
 
 @font-face {
   font-family: 'Cera Pro';
   font-weight: 600;
-  src: url(/assets/fonts/CeraProBold.otf);
+  src: url(/fonts/CeraProBold.otf);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Cera Pro' !important;
+  font-family: 'Cera Pro';
   scroll-behavior: smooth;
 }
 
-/* Description style adjustments */
-/* Banner */
-section#banner div.buttons p {
-  display: inline-block;
-  font-size: 12px;
-  box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
-  border-radius: 5px;
-  padding: 5px 15px;
-  user-select: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  margin-right: 10px;
-}
-
-section#banner div.buttons p:hover {
-  background-color: rgba(255, 255, 255, 0.025);
-}
-
-section#banner div.inner div.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff;
-  border-radius: 50%;
-}
-
-section#banner div.inner div.logo img {
-  width: 60%;
-}
-
-/* Wrapper */
-section.wrapper ul {
-  list-style: none;
-  text-align: left;
-}
-
-section.wrapper ul li {
-  font-weight: 400;
-  color: #dddddd;
-  margin-block: 10px;
-}
-
-section.wrapper ul li span {
-  font-weight: 600;
-  color: #ffffff;
-}
-
-section#four ul {
-  list-style: circle;
+a {
+  color: inherit;
+  text-decoration: none;
 }

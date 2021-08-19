@@ -1,0 +1,139 @@
+div.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 14px 32px;
+  background-color: #ffffffb3;
+  color: #212121;
+  backdrop-filter: blur(20px);
+  z-index: 10;
+
+  img {
+    width: 38px;
+  }
+
+  div.logoText {
+    margin-inline: 10px;
+    text-align: right;
+
+    p.logo {
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    p.motto {
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+
+  i.menuBurger {
+    display: none;
+  }
+
+  ul.desktopMenu {
+    list-style: none;
+    margin-left: auto;
+
+    li {
+      display: inline-block;
+      margin-inline: 15px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        filter: brightness(0.9);
+      }
+
+      &:last-of-type {
+        background-color: #268ffc;
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+        padding: 11px 22px;
+        color: #ffffff;
+        border-radius: 50px;
+
+        i {
+          margin-right: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.header {
+    position: relative;
+    padding-block: 14px;
+    padding-inline: 5px 20px;
+
+    img {
+      width: 35px;
+    }
+
+    div.logoText {
+  
+      p.logo {
+        font-size: 16px;
+      }
+  
+      p.motto {
+        font-size: 14px;
+        line-height: 10px;
+      }
+    }
+
+    ul.desktopMenu {
+      display: none;
+    }
+
+    i.menuBurger {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+
+    ul.mobileMenu {
+      position: absolute;
+      top: 62px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      list-style: none;
+      text-align: center;
+      background-color: #000000;
+      height: fit-content;
+  
+      li {
+        margin-block: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #ffffff;
+        user-select: none;
+
+        &:last-of-type {
+          background-color: #268ffc;
+          box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+          padding: 11px 22px;
+          color: #ffffff;
+          border-radius: 50px;
+          width: fit-content;
+          margin-inline: auto;
+  
+          i {
+            margin-right: 5px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,7 @@
+import Header from './Header'
 import Head from 'next/head'
+import Footer from './Footer'
+import Notice from './Notice'
 
 const Layout = ({children}) => {
   return (
@@ -11,15 +14,12 @@ const Layout = ({children}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </Head>
-
+      
+      <Header />
+      <Notice />
+      
       <main>{children}</main>
-
-      <script src='/assets/js/jquery.min.js'></script>
-			<script src='/assets/js/jquery.scrollex.min.js'></script>
-			<script src='/assets/js/browser.min.js'></script>
-			<script src='/assets/js/breakpoints.min.js'></script>
-			<script src='/assets/js/util.js'></script>
-			<script src='/assets/js/main.js'></script>
+      <Footer />
     </div>
   )
 }
