@@ -97,17 +97,18 @@ export default function Home() {
           <div className={styles.card}>
             <p className={styles.month}>September</p>
             <ul>
-              <li>Launch DEX Aggregator</li>
-              <li>Creation of Liquidity Pairs</li>
               <li>Marketing Campaign</li>
+              <li>Verification of Contract on BscScan</li>
+              <li>Creation of Liquidity Pairs</li>
+              <li>Launch DEX Aggregator</li>
             </ul>
           </div>
           <div className={styles.card}>
             <p className={styles.month}>October</p>
             <ul>
               <li>List on Coingecko and CoinMarketCap</li>
+              <li>Code Audit</li>
               <li>Official Partnership with NGOs & Environmental Organizations</li>
-              <li>Whitelisted & Public Onboarding</li>
               <li>Exchange Listings</li>
             </ul>
           </div>
@@ -125,7 +126,7 @@ export default function Home() {
               <li>Sustainable Investing Features Launched</li>
               <li>Official WasteBridge Exchange Launch</li>
               <li>WasteBridge DeFi Wallet & Swap</li>
-              <li>Further Exchange Listings</li>
+              <li>Wastebridge Card</li>
             </ul>
           </div>
         </div>
