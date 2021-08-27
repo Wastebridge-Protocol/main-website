@@ -43,7 +43,10 @@ const Notice = () => {
     <div className={styles.notice}>
       <p className={styles.top}>❗DxSale Pre Sale❗</p>
       <p className={styles.timer}>{days} : {hours} : {minutes} : {seconds} days</p>
-      <div className={styles.button} onClick={() => window.open('https://dxsale.app/app/v2_9/defipresale?saleID=2661&chain=BSC')}><i className='fad fa-tags'></i> Participate</div>
+      <div className={styles.btns}>
+        <div className={styles.button} onClick={() => window.open('https://dxsale.app/app/v2_9/defipresale?saleID=2661&chain=BSC')}><i className='fad fa-tags'></i> Participate</div>
+        <div className={styles.button} onClick={() => window.open('/howto.pdf')}><i className='fas fa-info'></i> How to Buy</div>
+      </div>
 
       <div className={styles.waves}></div>
     </div>
