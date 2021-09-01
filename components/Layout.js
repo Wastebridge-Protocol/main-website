@@ -1,7 +1,6 @@
 import Header from './Header'
 import Head from 'next/head'
 import Footer from './Footer'
-import Notice from './Notice'
 
 const Layout = ({children}) => {
   const initGA = () => {
@@ -31,7 +30,6 @@ const Layout = ({children}) => {
       </Head>
       
       <Header />
-      <Notice />
       
       <main>{children}</main>
       <Footer />
