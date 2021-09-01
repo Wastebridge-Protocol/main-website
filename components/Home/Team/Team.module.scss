@@ -1,0 +1,120 @@
+div.team {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 100px;
+  background-color: #000000;
+
+  p {
+  
+    &.header {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    &.subHeader {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 500;
+      color: #bdd9ff;
+    }
+  }
+
+  div.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/breakers/stacked.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  div.member {
+    text-align: center;
+    z-index: 1;
+
+    div.img {
+      position: relative;
+      margin-bottom: 6px;
+
+      img {
+        width: 150px;
+        border-radius: 50%;
+        border: 4px solid #4164a5;
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        background-color: #4164a5;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        border-radius: 50%;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.1s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &.git {
+          font-size: 13px;
+        }
+      }
+    }
+
+    p {
+      color: #ffffff;
+
+      &.name {
+        font-size: 17px;
+        font-weight: 600;
+        text-shadow: 1.4px 1.4px 0 #000000;
+      }
+
+      &.position {
+        text-shadow: 1.4px 1.4px 0 #000000;
+        font-size: 15px;
+        margin-top: 4px;
+        font-weight: 500;
+
+        i {
+          font-size: 12px;
+          margin-right: 4px;
+          color: #b6daff;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.team {
+    grid-template-columns: 1fr;
+
+    div.member {
+      padding-top: 30px;
+    }
+  }
+}

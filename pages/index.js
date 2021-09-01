@@ -1,3 +1,4 @@
+import Team from '../components/Home/Team/Team'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -164,7 +165,9 @@ export default function Home() {
             Swap dApp
           </div>
         </div>
-      </div>
+      </div> {/* Swap Showcase */}
+
+      <Team />
     </div>
   )
 }
