@@ -17,14 +17,20 @@ div.footer {
         font-size: 22px;
         font-weight: 500;
       }
+
+      p.email {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+      }
       
       ul {
         list-style: none;
+        margin-block: 10px;
         
         li {
           display: inline-block;
           color: #ffffff;
-          margin-top: 10px;
           margin-inline: 10px;
           cursor: pointer;
           

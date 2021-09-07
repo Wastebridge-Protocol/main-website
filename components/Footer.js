@@ -13,6 +13,7 @@ const Footer = () => {
             <li onClick={() => loadPage('https://t.me/wastebridge', false)}><i className='fab fa-telegram-plane'></i></li>
             <li onClick={() => loadPage('https://github.com/wastebridge-protocol', false)}><i className='fab fa-github'></i></li>
           </ul>
+          <p className={styles.email}>info@wastebridge.org</p>
         </div>
 
         <div className={styles.right}>
